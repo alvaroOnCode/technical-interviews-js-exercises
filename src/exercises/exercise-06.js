@@ -28,10 +28,10 @@ function tryToRemoveQuote(param) {
 removeFirstName(programmer);
 
 console.log(programmer);
-console.log(`${!programmer.firstName ? '✅ First name was removed because objects are passed as reference.' : '🔥 Error!'}`);
+console.log(`${!programmer.firstName ? '✅ First name was removed because objects are passed by reference.' : '🔥 Error!'}`);
 
 tryToRemoveQuote(quote);
 
 console.log(quote)
-console.log(`${quote.length ? '✅ Quote still stays because strings are passed as values.' : '🔥 Error!'}`)
+console.log(`${quote.length ? '✅ Quote still stays because strings are passed by values.' : '🔥 Error!'}`)
 
