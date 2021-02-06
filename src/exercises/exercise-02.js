@@ -4,7 +4,7 @@
 
 function sort(array) {
   // Solution
-  let result = [];
+  const result = [];
 
   while (array.length > 0) {
     const min = Math.min(...array);

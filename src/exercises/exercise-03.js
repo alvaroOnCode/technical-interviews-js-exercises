@@ -5,7 +5,7 @@
 
 function asyncTimeout(ms) {
   return new Promise((resolve, reject) => {
-    setTimeout(function () {
+    setTimeout(() => {
       resolve(`Sucess in ${ms} milliseconds!`);
     }, ms);
   });

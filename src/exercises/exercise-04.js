@@ -1,5 +1,7 @@
 /**
- * Implement a client-side service method to fetch a list of users from the server resource and filter them according to given set of options.
+ * Implement a client-side service method to fetch a list of users from the server resource
+ * and filter them according to given set of options.
+ *
  *  - Consider only the following filter options: city starts with 'South', minSuite and maxSuite.
  *  - Not all filter options must be used at once - some or all of them might be omitted.
  */
@@ -12,18 +14,18 @@ async function fetchMovies(source, options) {
     let count = 0;
 
     Object.keys(options).forEach((key) => {
-      if (key === "city" && item.address.city.startsWith(options[key])) {
-        count++;
+      if (key === 'city' && item.address.city.startsWith(options[key])) {
+        count += 1;
       }
 
       const suite = parseInt(item.address.suite.split(/\s/)[1], 10);
 
-      if (key === "minSuite" && suite >= options[key]) {
-        count++;
+      if (key === 'minSuite' && suite >= options[key]) {
+        count += 1;
       }
 
-      if (key === "maxSuite" && suite <= options[key]) {
-        count++;
+      if (key === 'maxSuite' && suite <= options[key]) {
+        count += 1;
       }
     });
 
@@ -33,15 +35,15 @@ async function fetchMovies(source, options) {
   return data;
 }
 
-const source = "https://jsonplaceholder.typicode.com/users";
+const source = 'https://jsonplaceholder.typicode.com/users';
 
 const opts = {
-  city: "South",
+  city: 'South',
   minSuite: 500,
   maxSuite: 950,
 };
 
 (async () => {
   const result = await fetchMovies(source, opts);
-  console.log("result:", result);
+  console.log('result:', result);
 })();

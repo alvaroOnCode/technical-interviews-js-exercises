@@ -2,7 +2,7 @@
 
 ## 🔖 Description
 
-Exercises from a top level company technical interview for a JavaScript job.
+Some JavaScript exercises from different technical interviews I've done for top level companies.
 
 ## 🌍 Languages
 
