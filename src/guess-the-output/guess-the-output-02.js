@@ -4,32 +4,31 @@
 
 let age = 23;
 const arr = ["John", age, age += 10, age -= 1, age - 1, undefined];
-console.log(arr);
+console.log(arr);         // 0️⃣7️⃣
 
 arr.length = 2;
-console.log(arr);
+console.log(arr);         // 1️⃣0️⃣
 
-delete arr[3];
-console.log(arr.length)
+delete arr[3];            // 🤔🤔
+console.log(arr.length);  // 1️⃣3️⃣
 
 delete arr[0];
-console.log(arr);
-console.log(arr.length);
+console.log(arr);         // 1️⃣6️⃣
+console.log(arr.length);  // 1️⃣7️⃣
 
 arr[6] = "Sam";
-console.log(arr);
+console.log(arr);         // 2️⃣0️⃣
 
 // Solution
 
-// Line 7: ["John", 23, 33, 32, 31, undefined]
+// 0️⃣7️⃣ 👉 ["John", 23, 33, 32, 31, undefined]
 
-// Line 10: ["John", 23]
+// 1️⃣0️⃣ 👉 ["John", 23]
 
-// ⚠️ Line 12: return true but it doesn't modify arr
+// 🤔🤔 👉 returns 'true' but it doesn't modify arr
+// 1️⃣3️⃣ 👉 2
 
-// Line 13: 2
+// 1️⃣6️⃣ 👉 [empty, 32]
+// 1️⃣7️⃣ 👉 2
 
-// Line 16: [empty, 32]
-// Line 17: 2
-
-// Line 20: [empty, 23, empty, empty, empty, empty, "Sam"]
+// 2️⃣0️⃣ 👉 [empty, 23, empty, empty, empty, empty, "Sam"]

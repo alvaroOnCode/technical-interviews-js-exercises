@@ -12,5 +12,5 @@ console.log('arr1:', arr1);
 /**
  * Solution:
  *
- * The output is [1] because concat returns a new array but originals are not modified.
+ * The output is [1] because 'concat' returns a new array but originals are not modified.
  */

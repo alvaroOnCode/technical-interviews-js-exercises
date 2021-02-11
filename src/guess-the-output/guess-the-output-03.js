@@ -9,11 +9,11 @@ function Candidate(name, age, stream, grad, school) {
   this.grad = grad;
 
   this.display = (p) => {
-    console.log(`First name: ${p.name.firstName}`);
-    console.log(`Age: ${p.age}`);
-    console.log(`Stream: ${p.stream}`);
-    console.log(`School: ${p.school.name}`);
-    console.log(`Grad: ${p.grad}`);
+    console.log(`First name: ${p.name.firstName}`); // 1️⃣2️⃣
+    console.log(`Age: ${p.age}`);                   // 1️⃣3️⃣
+    console.log(`Stream: ${p.stream}`);             // 1️⃣4️⃣
+    console.log(`School: ${p.school.name}`);        // 1️⃣5️⃣
+    console.log(`Grad: ${p.grad}`);                 // 🤔🤔
   };
 }
 
@@ -29,8 +29,8 @@ candidate.display(candidate);
 
 // Solution
 
-// Line 12: undefined
-// Line 13: 32 at the moment I'm coding this
-// Line 14: 'IT'
-// Line 15: Error because school is undefined and name can't be accesed
-// ⚠️ Line 16: Never happens due to execution break in previous line
+// 1️⃣2️⃣ 👉 undefined
+// 1️⃣3️⃣ 👉 32 at the moment I'm coding this
+// 1️⃣4️⃣ 👉 'IT'
+// 1️⃣5️⃣ 👉 Error because school is undefined and name can't be accesed
+// 🤔🤔 👉 Never happens due to execution breaks in previous line
