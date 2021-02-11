@@ -34,14 +34,17 @@
  * 📋 Constraints
  * 2 <= n <= 10^4
  * 0 <= num[i] <= 10^5
+ * 
+ * 🔎 Samples
+ * [4, 6, 8]    👉 28
+ * [1, 2, 3]    👉 9
+ * [1, 2, 3, 4] 👉 19
  */
 
 // Solution
 const num = [4, 6, 8];
 const num2 = [1, 2, 3];
 const num3 = [1, 2, 3, 4];
-const num4 = [10, 20, 30, 40, 50, 60];
-const num5 = [60, 50, 40, 30, 20, 10];
 
 function reductionCost(array) {
   let cost = 0;
@@ -79,8 +82,4 @@ console.log('--------------------------------------------------');
 console.log(`👉 The cost of reducing [${num2}] is ${reductionCost(num2)}`);
 console.log('--------------------------------------------------');
 console.log(`👉 The cost of reducing [${num3}] is ${reductionCost(num3)}`);
-console.log('--------------------------------------------------');
-console.log(`👉 The cost of reducing [${num4}] is ${reductionCost(num4)}`);
-console.log('--------------------------------------------------');
-console.log(`👉 The cost of reducing [${num5}] is ${reductionCost(num5)}`);
 console.log('--------------------------------------------------');
