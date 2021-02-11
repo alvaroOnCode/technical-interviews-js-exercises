@@ -4,6 +4,8 @@
 
 Some JavaScript exercises from different technical interviews I've done for top level companies.
 
+I'm sure that you can improve the way they have been solved, I'm open for pull requests 😁.
+
 ## 🌍 Languages
 
 - 🇺🇸 English
